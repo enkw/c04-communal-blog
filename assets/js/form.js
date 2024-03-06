@@ -1,4 +1,3 @@
-const rootEl = $('#root');
 const usernameInput = document.querySelector('#username-input');
 const subjectInput = document.querySelector('#subject-input');
 const contentInput = document.querySelector('#content-input');
