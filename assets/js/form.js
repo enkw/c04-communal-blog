@@ -20,7 +20,7 @@ submit.addEventListener('click', function (event) {
     localStorage.setItem('blogPost', JSON.stringify(blogPost));
 
     window.location.href = 'blog.html';
-
+// This portion clears the text boxes. Unsure if needed due to page swapping, need to ask Dan or investigate further.
     usernameInput.value = '';
     subjectInput.value = '';
     contentInput.value = '';
