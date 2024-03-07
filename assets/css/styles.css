@@ -24,6 +24,10 @@ h1, .switch, textarea, input[type="submit"] {
     color: #01161e;
 }
 
+h1 {
+  font-size: large;
+}
+
 hr {
   border-color: #01161e;
 }
