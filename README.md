@@ -33,7 +33,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 ![Screenshot of the dark mode toggle](./assets/images/Screenshot-of-dm.png)
 ![Screenshot of the blog post area with dark mode activated](./assets/images/Screenshot-dm-working.png)
 
-You can access this at: 
+You can access this by: [clicking here](https://enkw.github.io/c04-communal-blog/)
 
 ## Credits
 
