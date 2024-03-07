@@ -28,10 +28,10 @@ Both the home page and the blog page have a toggle switch for dark mode if the u
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-![Screenshot of the homepage's blog post area](assets/images/screenshot.png)
-![Screenshot of the blog page showing a post with subject, content, and username listed](assets/images/screenshot.png)
-![Screenshot of the dark mode toggle](assets/images/screenshot.png)
-![Screenshot of the blog post area with dark mode activated](assets/images/screenshot.png)
+![Screenshot of the homepage's blog post area](./assets/images/Screenshot-of-index.png)
+![Screenshot of the blog page showing a post with subject, content, and username listed](./assets/images/Screenshot-of-posts.png)
+![Screenshot of the dark mode toggle](./assets/images/Screenshot-of-dm.png)
+![Screenshot of the blog post area with dark mode activated](./assets/images/Screenshot-dm-working.png)
 
 You can access this at: 
 
