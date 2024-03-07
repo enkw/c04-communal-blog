@@ -21,6 +21,7 @@ submit.addEventListener('click', function (event) {
         return;
     }
 // This section is for adding the newBlogPost to the beginning of the existing array
+// Note: Oh lord I hate that the requirements for this have me using a .push for this, .unshift is RIGHT there, ugh
     blogPosts.push(newBlogPost);
 
 // Saves the updated array to localStorage
