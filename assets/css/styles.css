@@ -1,16 +1,138 @@
+body {
+  background-color: #eff6e0;
+  color: #01161e;
+}
+
 main {
     margin: 3rem auto;
     max-width: 90vw;
     width: 50ch;
-  }
+}
   
-  ul {
+ul {
     margin: 3rem auto;
     font-size: 1.75rem;
     padding: 0;
     list-style-type: none;
-  }
+}
   
-  ul li {
+ul li {
     margin: 1.2rem 0;
+}
+
+h1, .switch, textarea, input[type="submit"] {
+    color: #01161e;
+}
+
+hr {
+  border-color: #01161e;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card {
+  background-color: #aec3b0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+/* Dark mode settings */
+.dark-mode {
+  background-color: #01161e;
+  color: #eff6e0;
+}
+
+.dark-mode h1, .dark-mode .switch, .dark-mode textarea, .dark-mode input[typer="submit"] {
+  color: #eff6e0;
+}
+
+.dark-mode hr {
+  border-color: #eff6e0;
+}
+
+.dark-mode .card{
+  background-color: #124559;
+}
+
+/* Code below borrowed/learned from https://www.w3schools.com/howto/howto_css_switch.asp */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
   }
+}

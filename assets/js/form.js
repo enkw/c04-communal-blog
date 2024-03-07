@@ -21,7 +21,7 @@ submit.addEventListener('click', function (event) {
         return;
     }
 // This section is for adding the newBlogPost to the beginning of the existing array
-    blogPosts.unshift(newBlogPost);
+    blogPosts.push(newBlogPost);
 
 // Saves the updated array to localStorage
     localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
@@ -33,4 +33,20 @@ submit.addEventListener('click', function (event) {
     usernameInput.value = '';
     subjectInput.value = '';
     contentInput.value = '';
+});
+
+// This portion is the jQuery that controls the dark mode
+$(document).ready(function() {
+// This checks localStorage for if a mode has been stored previously
+const mode = localStorage.getItem('mode');
+if (mode === 'dark') {
+    $('body').addClass('dark-mode');
+    $('.switch input').prop('checked', true);
+}
+// This portion handles the dark mode toggle
+$('.switch input').change(function() {
+    $('body').toggleClass('dark-mode');
+    const currentMode = $('body').hasClass('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('mode', currentMode);
+});
 });

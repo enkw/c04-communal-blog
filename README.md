@@ -1,18 +1,12 @@
 # c04-communal-blog
 
-WHEN I view the posts page,
-THEN I am presented with a header, with a light mode/dark mode toggle, and a "Back" button.
-WHEN I click the light mode/dark mode toggle,
-THEN the page content's styles update to reflect the selection.
-
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This project is a demonstration of what I've learned about Web-APIs during my recent time with the NW bootcamp.
+I was able to use this as great practice for js, and was even able to utilize some even more recent things I've learned with jQuery.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+CSS continues to be a bit of a struggle for me, but I'm developing a deeper understanding of how to get things to do what I want,
+though more practice is needed.
 
 ## Table of Contents (Optional)
 
